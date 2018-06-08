@@ -2,10 +2,25 @@
 <head>
 	<title>Ajouter un contact</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="ajoutercontact.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 </head>
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Annuaire</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="Annuaire.php">Annuaire</a></li>
+        <li><a href="AjouterContact.php">Nouveau contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
 <body>
-	<h1>Ajouter un nouveau contact</h1>
-	<h3>Attention les champs nom, prénom et email sont obligatoire!!!</h3>
+	<div id="title">
+	<h1 id="titre1">Ajouter un nouveau contact</h1>
+	<h3 id="titre2">Attention les champs nom, prénom et email sont obligatoire!!!</h3>
+	</div>
+	<div id="form">
 <form method="POST" ACTION="">
 <label>Nom</label>
 <input type="text" name="nom" size="20" maxlength="20"> 
@@ -25,9 +40,34 @@
 <input type="text" name="ville" size="20" maxlength="20"> 
 <label>Tel</label>
 <input type="text" name="telephone" size="20" maxlength="20"> 
-<button name="submit" type="submit" value="Envoyer">envoyer</button>
+<button  class="btn waves-effect waves-light" name="submit" type="submit" value="Envoyer">Envoyer</button>
 </form>
+</div>
 </body>
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">En voir plus</h5>
+                <p class="white-text">Merci d'avoir regarder mon annuaire.</br> A bientôt!</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Plus de lien</h5>
+                <ul>
+                  <li><a class="white-text" href="#!"><i class="fa fa-twitch"></i> Twitch</a></li>
+                  <li><a class="white-text" href="#!"><i class="fa fa-twitter"></i> Twitter</a></li>
+                  <li><a class="white-text" href="#!"><i class="fa fa-facebook-square"></i> Facebook</a></a></li>
+                  <li><a class="white-text" href="#!"><i class="fa fa-youtube"></i> Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright
+            </div>
+          </div>
+        </footer>
 </html>
  
 <?php
