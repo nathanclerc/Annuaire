@@ -79,7 +79,7 @@ echo 'Champs bien remplis, insertion dans la base de donnée.';
 //Insertion dans la BDD de la saisie du formulaire
     try {
          $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-         $bdd = new PDO('mysql:host=localhost;dbname=Annuaire;charset=utf8', 'simoccauch19','azerty', $pdo_options);
+         $bdd = new PDO('mysql:host=localhost;dbname=Annuaire;charset=utf8', '#','#', $pdo_options);
 
          $req = $bdd->prepare('INSERT INTO contacts(nom, prenom, email, entreprise, datenaissance, rue, cp, ville, telephone)
    VALUES(:nom, :prenom, :email, :entreprise, :datenaissance, :rue, :cp, :ville, :telephone)');
