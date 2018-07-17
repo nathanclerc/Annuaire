@@ -2,7 +2,7 @@
 try {
 		$bdd = new
 	PDO('mysql:host=localhost;dbname=Annuaire;charset=utf8',
-		'simoccauch19','azerty');
+		'#','#');
 } catch (Exception $e) {
 	die('Erreur:'.$e->getMessage());
 }
